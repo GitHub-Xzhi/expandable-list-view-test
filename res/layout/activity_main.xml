@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <ImageView
+        android:id="@+id/add"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:onClick="add"
+        android:src="@drawable/add" />
+
+    <ExpandableListView
+        android:id="@+id/expandableListView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add"
+         >
+    </ExpandableListView>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/add"
+        android:layout_marginBottom="20dp"
+        android:layout_toRightOf="@+id/add"
+        android:text="添加分组" />
+
+</RelativeLayout>
